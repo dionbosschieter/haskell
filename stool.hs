@@ -11,6 +11,4 @@ main = do
   print x
   case length (x) of
     0 -> do putStrLn "./stool host[0:40].testdomain.nl//40"
-            return ()
-    1 -> do putStrLn x[0]
-            return ()
+    1 -> do map putStrLn x
